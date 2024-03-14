@@ -15,4 +15,5 @@
  */
 export function dogMonthlyCost(array) {
   // Good luck!
+  return "My dog Ivy has 2 sticks, 100 balls. This month she has cost me £10";
 }

@@ -10,10 +10,18 @@
  *
  *
  * A few examples:
- *    `dogMonthlyCost(['sticks', 2 , 'balls', 100, 'Ivy'])` should return "My dog Ivy has 2 sticks, 100 balls. This month she has cost me £10"
- *    `dogMonthlyCost(['sticks', 0, 'balls', 50, 'Steve'])` should return "My dog Steve has 0 sticks, 50 balls. This month she has cost me £10"
+ *    `dogMonthlyCost(['sticks', 2 , 'balls', 100, 'Ivy'])` should return "My dog Ivy has 2 sticks and 100 balls. This month they have cost me £10"
+ *    `dogMonthlyCost(['sticks', 0, 'balls', 50, 'Steve'])` should return "My dog Steve has 0 sticks and 50 balls. This month they have cost me £10"
  */
 export function dogMonthlyCost(array) {
   // Good luck!
-  return "My dog Ivy has 2 sticks, 100 balls. This month she has cost me £10";
+  const numberSticks = array[1];
+  const costSticks = numberSticks * 5;
+  const numberBalls = array[3];
+  const costBalls = numberBalls * 0.2;
+  const cost = costBalls - costSticks;
+  return `My dog ${array[4]} has ${numberSticks} sticks and ${numberBalls} balls. This month they have cost me £${cost}`;
 }
+
+//['sticks', 2 , 'balls', 100, 'Ivy']
+// "My dog Ivy has 2 sticks and 100 balls. This month they havs cost me £10"

@@ -34,7 +34,15 @@ export function dogMonthlyCost(array) {
   if (!Number.isInteger(cost)) {
     cost = cost.toFixed(2);
   }
-  return `My dog ${array[4]} has ${numberSticks} ${sticks} and ${numberBalls} ${balls}. This month they have cost me £${cost}`;
+  if (cost > 0) {
+    return `My dog ${array[4]} has ${numberSticks} ${sticks} and ${numberBalls} ${balls}. This month they have cost me £${cost}`;
+  } else {
+    return `My dog ${
+      array[4]
+    } has ${numberSticks} ${sticks} and ${numberBalls} ${balls}. This month they have made me £${(
+      cost * -1
+    ).toFixed(2)}`;
+  }
 }
 
 //['sticks', 2 , 'balls', 100, 'Ivy']

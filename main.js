@@ -19,36 +19,4 @@
 
 export function dogMonthlyCost(array) {
   // Good luck!
-  let sticks = "sticks";
-  let balls = "balls";
-  let socks = "socks";
-  const numberSticks = array[1];
-  if (numberSticks === 1) {
-    sticks = "stick";
-  }
-  const costSticks = numberSticks * 5;
-  const numberBalls = array[3];
-  if (numberBalls === 1) {
-    balls = "ball";
-  }
-  const costBalls = numberBalls * 0.2;
-
-  const numberSocks = array[5];
-  if (numberSocks === 1) {
-    socks = "sock";
-  }
-  const costSocks = numberSocks * 1.25;
-  let cost = costBalls + costSocks - costSticks;
-  if (!Number.isInteger(cost)) {
-    cost = cost.toFixed(2);
-  }
-  if (cost > 0) {
-    return `My dog ${array[6]} has ${numberSticks} ${sticks}, ${numberBalls} ${balls} and has stolen ${numberSocks} ${socks}. This month they have cost me £${cost}`;
-  } else {
-    return `My dog ${
-      array[6]
-    } has ${numberSticks} ${sticks}, ${numberBalls} ${balls} and has stolen ${numberSocks} ${socks}. This month they have made me £${(
-      cost * -1
-    ).toFixed(2)}`;
-  }
 }

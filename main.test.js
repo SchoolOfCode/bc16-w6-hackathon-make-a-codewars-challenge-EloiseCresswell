@@ -53,19 +53,27 @@ test("should return £5 for example 3, MVP1 with additional MVP3", () => {
   expect(actual).toBe(expected);
 });
 
-/*//Example 4
+//Example 4
 //Please note, the above examples all took PLURAL sticks/balls... this next test will test if just 1 stick is given
 test("test for example 4, if 1 stick is given", function () {
   //Arrange
   let expected =
-    "My dog Princess has 1 stick and 75 balls. This month they have cost me £10";
+    "My dog Princess has 1 stick, 75 balls and has stolen 15 socks. This month they have cost me £28.75";
   //Act
-  const actual = dogMonthlyCost(["sticks", 1, "balls", 75, "Princess"]);
+  const actual = dogMonthlyCost([
+    "sticks",
+    1,
+    "balls",
+    75,
+    "socks",
+    15,
+    "Princess",
+  ]);
   //Assert
   expect(actual).toEqual(expected);
 });
 
-//Example 5
+/*//Example 5
 //Test if 1 ball is needed and no sticks
 test("test for example 5", () => {
   //Arrage
@@ -100,6 +108,4 @@ test("testing if the dog makes money", () => {
   //Assert
   expect(actual).toEqual(expected);
 });
-
-//MVP 3 Example 1
 */

@@ -112,16 +112,15 @@ test("testing example 6, if there is not a integer for the cost", () => {
   //Assert
   expect(actual).toEqual(expected);
 });
-/*
+
 //MVP2 Example 1
 //Test if the dog 'makes money' that month.
 test("testing if the dog makes money", () => {
   //Arrange
   let expected =
-    "My dog Ivy has 5 sticks and 2 balls. This month they have made me £24.60";
+    "My dog Ivy has 5 sticks, 2 balls and has stolen 1 sock. This month they have made me £23.35";
   //Act
-  const actual = dogMonthlyCost(["sticks", 5, "balls", 2, "Ivy"]);
+  const actual = dogMonthlyCost(["sticks", 5, "balls", 2, "socks", 1, "Ivy"]);
   //Assert
   expect(actual).toEqual(expected);
 });
-*/

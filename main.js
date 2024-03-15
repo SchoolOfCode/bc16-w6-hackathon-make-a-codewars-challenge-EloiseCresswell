@@ -47,7 +47,7 @@ export function dogMonthlyCost(array) {
   } else {
     return `My dog ${
       array[6]
-    } has ${numberSticks} ${sticks} and ${numberBalls} ${balls}. This month they have made me £${(
+    } has ${numberSticks} ${sticks}, ${numberBalls} ${balls} and has stolen ${numberSocks} ${socks}. This month they have made me £${(
       cost * -1
     ).toFixed(2)}`;
   }

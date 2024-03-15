@@ -73,19 +73,27 @@ test("test for example 4, if 1 stick is given", function () {
   expect(actual).toEqual(expected);
 });
 
-/*//Example 5
+//Example 5
 //Test if 1 ball is needed and no sticks
 test("test for example 5", () => {
   //Arrage
   let expected =
-    "My dog Spooky has 0 sticks and 1 ball. This month they have cost me £0.20";
+    "My dog Spooky has 0 sticks, 1 ball and has stolen 0 socks. This month they have cost me £0.20";
   //Act
-  const actual = dogMonthlyCost(["sticks", 0, "balls", 1, "Spooky"]);
+  const actual = dogMonthlyCost([
+    "sticks",
+    0,
+    "balls",
+    1,
+    "socks",
+    0,
+    "Spooky",
+  ]);
   //Assert
   expect(actual).toEqual(expected);
 });
 
-//Example 6
+/*//Example 6
 //Test if there is not a whole integer cost
 test("testing example 6, if there is not a integer for the cost", () => {
   //Arrange

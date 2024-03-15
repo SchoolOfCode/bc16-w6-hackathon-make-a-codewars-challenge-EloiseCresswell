@@ -5,17 +5,17 @@ import { dogMonthlyCost } from "./main.js";
 // https://jamboard.google.com/d/1MyuUcj8szgu60FB7zdGt6VJepWAFEB5ADviME_Lpc8c/viewer?f=0
 
 //Example 1
-test("should return £10 for example 1 MVP1", () => {
+test("should return £16.25 for example 1 MVP1", () => {
   //Arrange
   const expected =
-    "My dog Ivy has 2 sticks and 100 balls. This month they have cost me £10";
+    "My dog Ivy has 2 sticks, 100 balls and has stolen 5 socks. This month they have cost me £16.25";
   //Act
-  const actual = dogMonthlyCost(["sticks", 2, "balls", 100, "Ivy"]);
+  const actual = dogMonthlyCost(["sticks", 2, "balls", 100, "socks", 5, "Ivy"]);
   //Assert
   expect(actual).toBe(expected);
 });
 
-//Example 2
+/*//Example 2
 test("should return £10 for example 2 MVP1", () => {
   //Arrange
   const expected =
@@ -84,3 +84,6 @@ test("testing if the dog makes money", () => {
   //Assert
   expect(actual).toEqual(expected);
 });
+
+//MVP 3 Example 1
+*/

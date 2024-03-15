@@ -15,18 +15,26 @@ test("should return £16.25 for example 1 MVP1", () => {
   expect(actual).toBe(expected);
 });
 
-/*//Example 2
+//Example 2
 test("should return £10 for example 2 MVP1", () => {
   //Arrange
   const expected =
-    "My dog Steve has 0 sticks and 50 balls. This month they have cost me £10";
+    "My dog Steve has 0 sticks, 50 balls and has stolen 4 socks. This month they have cost me £15";
   //Act
-  const actual = dogMonthlyCost(["sticks", 0, "balls", 50, "Steve"]);
+  const actual = dogMonthlyCost([
+    "sticks",
+    0,
+    "balls",
+    50,
+    "socks",
+    4,
+    "Steve",
+  ]);
   //Assert
   expect(actual).toBe(expected);
 });
 
-//Example 3
+/*//Example 3
 test("should return £5 for example 3, MVP1", () => {
   //Arrange
   let expected =
